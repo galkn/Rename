@@ -5,7 +5,7 @@ This plugin allows you to rename your Ruby on Rails 3 app seamlessly with a sing
 
 == Installation
 
-  % rails install plugin git@github.com:get/Rename.git
+  % rails plugin install git@github.com:get/Rename.git
 
 == Usage
 
