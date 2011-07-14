@@ -1,7 +1,5 @@
 # Rename
 
-[![Build Status](https://secure.travis-ci.org/[get]/[Rename].png)](http://travis-ci.org/[get]/[Rename])
-
 Renaming your app in Rails3 is no longer a hassle. 
 This plugin allows you to rename your Ruby on Rails 3 app seamlessly with a single command.
 
