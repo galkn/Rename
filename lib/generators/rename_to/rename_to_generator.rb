@@ -31,6 +31,10 @@ class RenameToGenerator < Rails::Generators::Base
       gsub_file 'config.ru', /(run) (#{Regexp.escape(old_name)})(::Application)/mi do |match|
         "run #{new_name_capitalized}::Application"
       end
+
+      gsub_file 'Rakefile', /(run) (#{Regexp.escape(old_name)})(::Application)/mi do |match|
+        "run #{new_name_capitalized}::Application"
+      end
       
       gsub_file 'config/initializers/secret_token.rb', /(#{Regexp.escape(old_name)})(::Application.config.secret_token)/mi do |match|
         "#{new_name_capitalized}::Application.config.secret_token"
