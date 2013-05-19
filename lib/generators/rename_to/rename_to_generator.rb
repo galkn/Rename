@@ -39,6 +39,10 @@ class RenameToGenerator < Rails::Generators::Base
       gsub_file 'config/initializers/session_store.rb', /(#{Regexp.escape(old_name)})(::Application.config.session_store)/mi do |match|
         "#{new_name_capitalized}::Application.config.session_store"
       end
+
+      gsub_file 'config/initializers/session_store.rb', /#{Regexp.escape(old_name.underscore)}/ do |match|
+        "#{new_name_capitalized.underscore}"
+      end
       
       gsub_file 'Rakefile', /(#{Regexp.escape(old_name.capitalize)})(::Application.load_tasks)/mi do |match|
         "#{new_name_capitalized}::Application.load_tasks"
