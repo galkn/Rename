@@ -1,6 +1,6 @@
 # Rename
 
-Note plugins are deprecated from Rails 4. This plugin will only work for Rails 3 and below.
+Note **plugins are deprecated from Rails 4**. This plugin will only work for Rails 3 and below.
 
 Renaming your app in Rails 3 is no longer a hassle. 
 This plugin allows you to rename your Ruby on Rails 3 app seamlessly with a single command.
